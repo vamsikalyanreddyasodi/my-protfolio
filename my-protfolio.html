@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222629;
+            color: #61892F;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #86C232;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: #red;
+        }
+			
+
+        .section-title {
+            color: #61892F;
+        }
+
+        section {
+            padding: 60px 0;
+			background-color: #222629;
+        }
+
+        footer, {
+            background-color: #222629;
+            color: #ffffff;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .profile-pic img {
+            width: 100%;
+            border-radius: 50%;
+            max-width: 200px;
+            border: 5px solid #ffffff;
+        }
+
+         .profile-pic img {
+            width: 100%;
+            border-radius: 50%;
+            max-width: 200px;
+            border: 5px solid #ffffff;
+        }
+
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+			background-color: #474B4F;
+            color: #ffffff;
+        }
+		.card-body{
+		}
+        .card:hover {
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-img-top {
+            height: 200px; /* Adjust the height as needed */
+            object-fit: cover;
+        }
+		p,li{
+			color:#86C232;
+		}
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Vamsi Kalyan Reddy</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="about" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 profile-pic">
+                <img src="./assets/vamsikalyan.jpeg" alt="Profile Picture" class="img-fluid">
+            </div>
+            <div class="col-sm-8">
+                <h2 class="section-title mb-4">About Me</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at est euismod, malesuada neque id, tincidunt risus. Aliquam at nisl nec metus varius tincidunt. Phasellus eu dolor tortor. Nam dapibus felis eget sapien iaculis pharetra. Duis ullamcorper rutrum dui, a sodales quam sodales non. Quisque condimentum finibus risus a bibendum.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio" class="py-5">
+    <div class="container">
+        <h2 class="section-title mb-4">Portfolio</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./assets/Basel.png" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./assets/Reg-reportng.jpg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./assets/creditrisk.jpg" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="py-5">
+    <div class="container">
+        <h2 class="section-title mb-4">Skills</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Frontend</h4>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Angular</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4>Backend</h4>
+                <ul>
+                    <li>Java</li>
+                    <li>Spring Boot</li>
+                    <li>RESTful APIs</li>
+                    <li>SQL</li>
+                    <li>Teradata</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4>Others</h4>
+                <ul>
+                    <li>Git</li>
+                    <li>Agile Methodologies</li>
+                    <li>Problem Solving</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="hire-me" class="py-5">
+    <div class="container">
+        <h2 class="section-title mb-4">Hire Me</h2>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="card p-4">
+                    <h4 class="mb-3">Contact Details:</h4>
+                    <ul class="list-unstyled">
+                        <li><i class="fab fa-envelope mr-2"></i> Email: vamsi.kalyan.reddy.a.s.l@gmail.com</li>
+                        <li><i class="fas fa-phone mr-2"></i> Mobile: +91 9866072151</li>
+                        <li><i class="fas fa-briefcase mr-2"></i> Naukri: <a href="https://www.naukri.com/">Your Naukri Profile</a></li>
+                        <li><i class="fab fa-linkedin mr-2"></i> LinkedIn: <a href="https://www.linkedin.com/">Your LinkedIn Profile</a></li>
+                        <li><i class="fab fa-instagram mr-2"></i> Instagram: <a href="https://www.instagram.com/">Your Instagram Profile</a></li>
+                        <li><i class="fab fa-facebook mr-2"></i> Facebook: <a href="https://www.facebook.com/">Your Facebook Profile</a></li>
+                    </ul>
+                    <p class="mt-4 text-center">
+                        <a href="./assets/VamsiKalyan_Java_Full_Stack_Developer.pdf" download class="btn btn-primary">My Resume</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+        <p>&copy; 2024 My Portfolio</p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
