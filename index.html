@@ -63,15 +63,21 @@
         }
 
         .card {
-            border: none;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s ease;
-			background-color: #474B4F;
-            color: #ffffff;
-        }
-		.card-body{
-		}
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Set cards to occupy full height */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    background-color: #474B4F;
+    color: #ffffff;
+}
+
+.card-body {
+    flex-grow: 1; /* Allow card body to grow vertically */
+}
+
         .card:hover {
             box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
         }
@@ -122,7 +128,7 @@
             </div>
             <div class="col-sm-8">
                 <h2 class="section-title mb-4">About Me</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at est euismod, malesuada neque id, tincidunt risus. Aliquam at nisl nec metus varius tincidunt. Phasellus eu dolor tortor. Nam dapibus felis eget sapien iaculis pharetra. Duis ullamcorper rutrum dui, a sodales quam sodales non. Quisque condimentum finibus risus a bibendum.</p>
+                <p>I am a dynamic and dedicated technocrat with 3 years of hands-on experience in the IT industry. My expertise lies in end-to-end application development within the Banking sector, including an on-site stint at Morgan Stanley. Proficient in a wide range of technologies such as Java, Spring, Hibernate, Teradata SQL, and Angular, I am committed to delivering high-quality solutions that meet project goals within Agile and Scrum frameworks. With strong communication skills and a collaborative mindset, I thrive in fostering positive team environments and ensuring clear interaction with stakeholders and clients throughout the development lifecycle.</p>
             </div>
         </div>
     </div>
@@ -136,8 +142,12 @@
                 <div class="card">
                     <img src="./assets/Basel.png" class="card-img-top" alt="Project 1">
                     <div class="card-body">
-                        <h5 class="card-title">Project 1</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h5 class="card-title">Basel</h5>
+                        <p class="card-text">BASELHUB is a web application designed for calculating essential financial metrics, including Probability of Default (PD), Loss 
+Given Default (LGD), and Exposure at Default (EAD) for WM(Wealth Management) Securities Based Lending products. The 
+platform offers a user-friendly interface for setting rules, enabling seamless customization through the UI. Its capabilities 
+extend to report generation and visualization of defaulted accounts, providing comprehensive insights into risk assessment 
+and financial exposure.</p>
                     </div>
                 </div>
             </div>
@@ -145,8 +155,14 @@
                 <div class="card">
                     <img src="./assets/Reg-reportng.jpg" class="card-img-top" alt="Project 2">
                     <div class="card-body">
-                        <h5 class="card-title">Project 2</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h5 class="card-title">TIC Reporting</h5>
+                        <p class="card-text">Tic reports is a dynamic web application designed to streamline the generation and distribution of reports on a daily, weekly, 
+monthly, quarterly, and yearly basis. These reports are systematically dispatched to the Federal Reserve Board of the US 
+government. The platform not only facilitates efficient reporting to regulatory authorities but also empowers users with 
+comprehensive access to the report contents. Tic reports is a web application that generates various reports daily, weekly, 
+monthly, quarterly and yearly reports and these reports will be sent to the Federal Reserve Board of us government and 
+trough this web application users will be able to see the all the generated reports contents and can down load the reports 
+and we also shows the graphical data based on the report data .</p>
                     </div>
                 </div>
             </div>
@@ -174,12 +190,15 @@
                     <li>CSS</li>
                     <li>JavaScript</li>
                     <li>Angular</li>
+					<li>Bootstrap</li>
                 </ul>
             </div>
             <div class="col-md-4">
                 <h4>Backend</h4>
                 <ul>
                     <li>Java</li>
+					<li>Spring</li>
+					<li>Spring MVC</li>
                     <li>Spring Boot</li>
                     <li>RESTful APIs</li>
                     <li>SQL</li>
@@ -206,10 +225,10 @@
                 <div class="card p-4">
                     <h4 class="mb-3">Contact Details:</h4>
                     <ul class="list-unstyled">
-                        <li><i class="fab fa-envelope mr-2"></i> Email: vamsi.kalyan.reddy.a.s.l@gmail.com</li>
+					<li>Email</li>
+                        <li>vamsi.kalyan.reddy.a.s.l@gmail.com</li>
                         <li><i class="fas fa-phone mr-2"></i> Mobile: +91 9866072151</li>
-                        <li><i class="fas fa-briefcase mr-2"></i> Naukri: <a href="https://www.naukri.com/">Your Naukri Profile</a></li>
-                        <li><i class="fab fa-linkedin mr-2"></i> LinkedIn: <a href="https://www.linkedin.com/">Your LinkedIn Profile</a></li>
+                        <li><i class="fab fa-linkedin mr-2"></i> LinkedIn: <a href="https://www.linkedin.com/in/vamsi-kalyan-318312203?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Your LinkedIn Profile</a></li>
                         <li><i class="fab fa-instagram mr-2"></i> Instagram: <a href="https://www.instagram.com/">Your Instagram Profile</a></li>
                         <li><i class="fab fa-facebook mr-2"></i> Facebook: <a href="https://www.facebook.com/">Your Facebook Profile</a></li>
                     </ul>
